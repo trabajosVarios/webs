@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,14 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+		<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+		<link rel="stylesheet" type="text/css" href="css/nivo-lightbox.css">
+		<link rel="stylesheet" type="text/css" href="css/nivo-lightbox-theme/default/default.css"/>
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Rancho&effect=anaglyph" rel="stylesheet">
 
@@ -23,28 +30,140 @@
 		<![endif]-->
 	</head>
 	<body>
+
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-12 col-md-6">
+				<nav class="navbar navbar-default wow fadeIn" role="navigation">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">Title</a>
+						</div>
+				
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li><a href="#">Separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</nav>
+			</div>
+		</div>
+
+
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 wow slideInLeft "data-wow-duration="2s" data-wow-delay="1s">
 					<h1 class="text-center">Hello World</h1>
 				</div>
-				<div class="col-sm-12 col-md-6">
+				<div class="col-sm-12 col-md-6 wow slideInRight" data-wow-offset="0"  data-wow-delay="2s">
 					<h1 class="text-center font-effect-anaglyph">Hola Mundo</h1>
 				</div>
-				<div class="col-sm-12 col-md-6">
+				<div class="col-sm-12 col-md-6 wow fadeIn" data-wow-offset="0"  data-wow-delay="2s">
 					<a href="img/02.jpg" data-fancybox data-caption="Nuevas Fotos">
 						<img src="img/thumbnail.jpg" alt="">
 					</a>
 				</div>
-				<div class="col-sm-12 col-md-6">
+				<div class="col-sm-12 col-md-6 wow fadeOutDown" data-wow-offset="1"  data-wow-delay="2s">
 					<i class="fa fa-battery-half fa-5x" aria-hidden="true"></i>
 				</div>
 
 			</div>			
-		</div>		
+		</div>
+		
+		<br>
 
+		<section id="vld">
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						
+						<form action="test.php" method="POST" role="form">
+						<label for="">Ingresa Rut</label>
+						
+						<input type="text" name="rut" id="rut" class="form-control" value="" required="required" >
+						<br>
+						<button type="submit" class="btn btn-default">Revisar</button>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+				  <div class="wow bounceInUp" data-wow-delay="0.4s">
+					<div id="owl-works" class="owl-carousel">
+						<div class="item"><a href="img/01.jpg" data-lightbox-gallery="gallery"><img src="img/01.jpg" alt="imagen"></a></div>
+						<div class="item"><a href="img/02.jpg" data-lightbox-gallery="gallery"><img src="img/02.jpg" alt="imagen"></a></div>
+						<div class="item"><a href="img/03.jpg" data-lightbox-gallery="gallery"><img src="img/03.jpg" alt="imagen"></a></div>
+						<div class="item"><a href="img/04.jpg" data-lightbox-gallery="gallery"><img src="img/04.jpg" alt="imagen"></a></div>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+			
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 flexslider">
+					<ul class="slides">
+						<li><img src="img/01.jpg" alt=""></li>
+						<li><img src="img/02.jpg" alt=""></li>
+						<li><img src="img/03.jpg" alt=""></li>
+						<li><img src="img/04.jpg" alt=""></li>
+						<li><img src="img/05.jpg" alt=""></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+		
+		
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+		<!-- Owl- Carousel -->
+		<script src="js/owl.carousel.js"></script>
+		<!-- WOW Animate -->
+		<script src="js/wow.min.js"></script>
+		<!-- FlexSlider -->
+		<script src="js/jquery.flexslider.min.js"></script>
+		<!-- Nivo LightBox -->
+		<script src="js/nivo-lightbox.js"></script>
+
+		<script src="js/revision.js" ></script>
+		
 		<!-- Font Awesome 4.7.0-->
 		<script src="https://use.fontawesome.com/c5b135b2ad.js"></script>
 		<!-- Bootstrap JavaScript -->
